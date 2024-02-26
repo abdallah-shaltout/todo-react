@@ -52,8 +52,15 @@ function App() {
                 <h2 className="text-xl text-amber-500 font-bold trans hover:text-light cursor-default">
                     By Abdallah Shaltout
                 </h2>
+                <a
+                    target="_blank"
+                    href="https://github.com/abdallah-shaltout/todo-react"
+                    className="bg-slate-800 px-4 flex-center gap-3 font-medium mx-auto w-fit my-2 py-2 text-xl !font-sans rounded-md trans hover:bg-slate-700">
+                    <span>GitHub</span>
+                    <i className="bi bi-github"></i>
+                </a>
             </div>
-            <div className="bg-slate-800 p-5 rounded-md shadow abs-center max-w-xl w-nine flex-center flex-col gap-4">
+            <div className="bg-slate-800 p-5 rounded-md shadow  mx-auto max-w-xl w-nine flex-center flex-col gap-4 ">
                 <h1 className="text-3xl ">Get Things Done!</h1>
                 <AppForm AddTodo={AddTodo} />
                 <ul
