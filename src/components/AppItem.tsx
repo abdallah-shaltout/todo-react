@@ -31,7 +31,8 @@ export default function AppItem({
             {showEdit ? (
                 <form
                     className="flex-between sm:gap-2"
-                    onSubmit={() => {
+                    onSubmit={(e) => {
+                        e.preventDefault();
                         setShowEdit(false);
                         UpdateTodo(todo.id, { ...todo, title });
                     }}>
